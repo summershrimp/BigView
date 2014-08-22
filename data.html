@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh" ng-app="raw">
+<head>
+	<title>Ace数据可视化系统</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script>
+		document.write('<base href="'+document.location+'" />');
+	</script>
+	<!-- jquery -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-bootstrap-colorpicker/css/colorpicker.css">
+	<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">	
+	<link rel="stylesheet" href="css/raw.css"/>
+	<link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body data-spy="scroll" data-target="#raw-nav">
+
+	<nav class="navbar" role="navigation" id="raw-nav">
+		<div class="container">
+		 <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#raw-navbar">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand">Ace数据可视化系统</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="raw-navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="api.html">参考文档</a></li>
+					<li><a href="data.html">数据管理</a></li>
+					<li><a href="hadoop.html">任务查看</a></li>
+					<li><a href="manage.html">集群管理</a></li>
+					<li><a href="login.html">登陆</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div ng-view class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<p><strong>Ace</strong> 由 <a href="http://www.nuaa.edu.cn">南京航空航天大学</a> ACE团队开发</p>
+				<p>&copy; 2013-2014 </p>
+			</div>
+			<div class="col-md-4">
+				<p><span>上传您的文件</span><button type="button" style="float:right" class="btn btn-normal">浏览</button></p>
+				<button type="button" class="btn btn-success">上传</button>
+			</div>
+		</div>
+	</div>
+
+ 	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<p><strong>Ace</strong> 由 <a href="http://www.nuaa.edu.cn">南京航空航天大学</a> ACE团队开发</p>
+					<p>&copy; 2013-2014 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bootstrap -->
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+</body>
+</html>
